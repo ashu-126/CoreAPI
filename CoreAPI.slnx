@@ -3,5 +3,6 @@
     <File Path=".editorconfig" />
   </Folder>
   <Project Path="CoreAPI.Data/CoreAPI.Data.csproj" />
+  <Project Path="CoreAPI.Tests/CoreAPI.Tests.csproj" />
   <Project Path="CoreAPI/CoreAPI.csproj" />
 </Solution>

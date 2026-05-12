@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="SonarQube Code Quality Rules" Description="Rules for code quality analysis" ToolsVersion="16.0">
+  <!-- Security Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1305" Action="Warning" /> <!-- Specify IFormatProvider -->
+    <Rule Id="CA1310" Action="Warning" /> <!-- Specify StringComparison for correctness -->
+    <Rule Id="CA1311" Action="Warning" /> <!-- Specify CultureInfo -->
+    <Rule Id="CA2100" Action="Warning" /> <!-- Review SQL queries for security vulnerabilities -->
+    <Rule Id="CA2101" Action="Warning" /> <!-- Specify marshaling for P/Invoke string arguments -->
+    <Rule Id="CA2119" Action="Warning" /> <!-- Seal methods that satisfy private interfaces -->
+    <Rule Id="CA2153" Action="Warning" /> <!-- Do Not Catch Corrupted State Exceptions -->
+    <Rule Id="CA2300" Action="Warning" /> <!-- Do not use insecure deserializer BinaryFormatter -->
+    <Rule Id="CA2302" Action="Warning" /> <!-- Ensure BinaryFormatter.Deserialize is not called before setting BinaryFormatter.SerializationBinder -->
+    <Rule Id="CA3001" Action="Warning" /> <!-- Review code for SQL injection vulnerabilities -->
+    <Rule Id="CA3002" Action="Warning" /> <!-- Review code for XSS vulnerabilities -->
+    <Rule Id="CA3003" Action="Warning" /> <!-- Review code for file path injection vulnerabilities -->
+    <Rule Id="CA3004" Action="Warning" /> <!-- Review code for information disclosure vulnerabilities -->
+    <Rule Id="CA3005" Action="Warning" /> <!-- Review code for LDAP injection vulnerabilities -->
+    <Rule Id="CA3006" Action="Warning" /> <!-- Review code for process command injection vulnerabilities -->
+    <Rule Id="CA3007" Action="Warning" /> <!-- Review code for open redirect vulnerabilities -->
+  </Rules>
+
+  <!-- Reliability Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1802" Action="Warning" /> <!-- Use literals where appropriate -->
+    <Rule Id="CA1806" Action="Warning" /> <!-- Do not ignore method results -->
+    <Rule Id="CA1810" Action="Warning" /> <!-- Initialize reference type static fields inline -->
+    <Rule Id="CA1821" Action="Warning" /> <!-- Remove empty finalizers -->
+    <Rule Id="CA1822" Action="Warning" /> <!-- Mark members as static -->
+    <Rule Id="CA1823" Action="Warning" /> <!-- Avoid unused private fields -->
+    <Rule Id="CA1824" Action="Warning" /> <!-- Mark assemblies with NeutralResourcesLanguageAttribute -->
+    <Rule Id="CA1825" Action="Warning" /> <!-- Avoid zero-length array allocations -->
+    <Rule Id="CA1826" Action="Warning" /> <!-- Use property instead of Linq Enumerable method -->
+    <Rule Id="CA1827" Action="Warning" /> <!-- Do not use Count/LongCount when Any can be used -->
+    <Rule Id="CA1829" Action="Warning" /> <!-- Use String.Contains instead of Enumerable.Contains -->
+    <Rule Id="CA1830" Action="Warning" /> <!-- Prefer strongly-typed Append and Insert method overloads on StringBuilder -->
+    <Rule Id="CA1831" Action="Warning" /> <!-- Use AsSpan instead of Range-based indexers for string -->
+  </Rules>
+
+  <!-- Performance Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1802" Action="Warning" /> <!-- Use literals where appropriate -->
+    <Rule Id="CA1805" Action="Warning" /> <!-- Do not initialize unnecessarily -->
+    <Rule Id="CA1806" Action="Warning" /> <!-- Do not ignore method results -->
+    <Rule Id="CA1810" Action="Warning" /> <!-- Initialize reference type static fields inline -->
+    <Rule Id="CA1815" Action="Warning" /> <!-- Override equals and operator equals on value types -->
+    <Rule Id="CA1816" Action="Warning" /> <!-- Call GC.SuppressFinalize correctly -->
+    <Rule Id="CA1819" Action="Warning" /> <!-- Properties should not return arrays -->
+    <Rule Id="CA1820" Action="Warning" /> <!-- Test for empty strings using string length -->
+    <Rule Id="CA1821" Action="Warning" /> <!-- Remove empty finalizers -->
+    <Rule Id="CA1822" Action="Warning" /> <!-- Mark members as static -->
+    <Rule Id="CA1823" Action="Warning" /> <!-- Avoid unused private fields -->
+    <Rule Id="CA1824" Action="Warning" /> <!-- Mark assemblies with NeutralResourcesLanguageAttribute -->
+    <Rule Id="CA1825" Action="Warning" /> <!-- Avoid zero-length array allocations -->
+    <Rule Id="CA1826" Action="Warning" /> <!-- Use property instead of Linq Enumerable method -->
+  </Rules>
+
+  <!-- Design Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1001" Action="Warning" /> <!-- Types that own disposable fields should be disposable -->
+    <Rule Id="CA1008" Action="Warning" /> <!-- Enums should have zero value -->
+    <Rule Id="CA1010" Action="Warning" /> <!-- Collections should implement generic interface -->
+    <Rule Id="CA1012" Action="Warning" /> <!-- Abstract types should not have constructors -->
+    <Rule Id="CA1014" Action="Warning" /> <!-- Mark assemblies with CLSCompliantAttribute -->
+    <Rule Id="CA1016" Action="Warning" /> <!-- Mark assemblies with AssemblyVersionAttribute -->
+    <Rule Id="CA1017" Action="Warning" /> <!-- Mark assemblies with ComVisibleAttribute -->
+    <Rule Id="CA1018" Action="Warning" /> <!-- Mark attributes with AttributeUsageAttribute -->
+    <Rule Id="CA1019" Action="Warning" /> <!-- Define accessors for attribute arguments -->
+    <Rule Id="CA1024" Action="Warning" /> <!-- Use properties where appropriate -->
+    <Rule Id="CA1027" Action="Warning" /> <!-- Mark enums with FlagsAttribute -->
+    <Rule Id="CA1028" Action="Warning" /> <!-- Enum Storage should be Int32 -->
+    <Rule Id="CA1030" Action="Warning" /> <!-- Use events where appropriate -->
+    <Rule Id="CA1033" Action="Warning" /> <!-- Interface methods should be callable by child types -->
+    <Rule Id="CA1036" Action="Warning" /> <!-- Override methods on comparable types -->
+    <Rule Id="CA1040" Action="Warning" /> <!-- Avoid empty interfaces -->
+    <Rule Id="CA1041" Action="Warning" /> <!-- Provide ObsoleteAttribute message -->
+    <Rule Id="CA1043" Action="Warning" /> <!-- Use Integral Or String Argument For Indexers -->
+    <Rule Id="CA1044" Action="Warning" /> <!-- Properties should not be write only -->
+    <Rule Id="CA1050" Action="Warning" /> <!-- Declare types in namespaces -->
+    <Rule Id="CA1051" Action="Warning" /> <!-- Do not declare visible instance fields -->
+  </Rules>
+
+  <!-- Maintainability Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1501" Action="Warning" /> <!-- Avoid excessive inheritance -->
+    <Rule Id="CA1502" Action="Warning" /> <!-- Avoid excessive complexity -->
+    <Rule Id="CA1505" Action="Warning" /> <!-- Avoid unmaintainable code -->
+    <Rule Id="CA1506" Action="Warning" /> <!-- Avoid excessive class coupling -->
+    <Rule Id="CA1507" Action="Warning" /> <!-- Use nameof in place of string -->
+    <Rule Id="CA1508" Action="Warning" /> <!-- Avoid dead conditional code -->
+    <Rule Id="CA1509" Action="Warning" /> <!-- Invalid entry in code metrics rule specification file -->
+  </Rules>
+
+  <!-- Naming Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA1700" Action="Warning" /> <!-- Do not name enum values Reserved -->
+    <Rule Id="CA1707" Action="Warning" /> <!-- Identifiers should not contain underscores -->
+    <Rule Id="CA1708" Action="Warning" /> <!-- Identifiers should differ by more than case -->
+    <Rule Id="CA1709" Action="Warning" /> <!-- Identifiers should be cased correctly -->
+    <Rule Id="CA1710" Action="Warning" /> <!-- Identifiers should have correct suffix -->
+    <Rule Id="CA1711" Action="Warning" /> <!-- Identifiers should not have incorrect suffix -->
+    <Rule Id="CA1712" Action="Warning" /> <!-- Do not prefix enum values with type name -->
+    <Rule Id="CA1713" Action="Warning" /> <!-- Events should not have before or after prefix -->
+    <Rule Id="CA1714" Action="Warning" /> <!-- Flags enums should have plural names -->
+    <Rule Id="CA1715" Action="Warning" /> <!-- Identifiers should have correct prefix -->
+    <Rule Id="CA1716" Action="Warning" /> <!-- Identifiers should not match keywords -->
+    <Rule Id="CA1717" Action="Warning" /> <!-- Only FlagsAttribute enums should have plural names -->
+    <Rule Id="CA1718" Action="Warning" /> <!-- Identifiers should not contain type names -->
+    <Rule Id="CA1719" Action="Warning" /> <!-- Parameter names should not match member names -->
+    <Rule Id="CA1720" Action="Warning" /> <!-- Identifier contains type name -->
+    <Rule Id="CA1721" Action="Warning" /> <!-- Property names should not match get methods -->
+    <Rule Id="CA1722" Action="Warning" /> <!-- Identifiers should not have incorrect prefix -->
+    <Rule Id="CA1724" Action="Warning" /> <!-- Type names should not match namespaces -->
+    <Rule Id="CA1725" Action="Warning" /> <!-- Parameter names should match base declaration -->
+  </Rules>
+
+  <!-- Usage Rules -->
+  <Rules AnalyzerId="Microsoft.CodeAnalysis.NetAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.NetAnalyzers">
+    <Rule Id="CA2200" Action="Warning" /> <!-- Rethrow to preserve stack details -->
+    <Rule Id="CA2201" Action="Warning" /> <!-- Do not raise reserved exception types -->
+    <Rule Id="CA2207" Action="Warning" /> <!-- Initialize value type static fields inline -->
+    <Rule Id="CA2208" Action="Warning" /> <!-- Instantiate argument exceptions correctly -->
+    <Rule Id="CA2211" Action="Warning" /> <!-- Non-constant fields should not be visible -->
+    <Rule Id="CA2213" Action="Warning" /> <!-- Disposable fields should be disposed -->
+    <Rule Id="CA2214" Action="Warning" /> <!-- Do not call overridable methods in constructors -->
+    <Rule Id="CA2215" Action="Warning" /> <!-- Dispose methods should call base class dispose -->
+    <Rule Id="CA2216" Action="Warning" /> <!-- Disposable types should declare finalizer -->
+    <Rule Id="CA2217" Action="Warning" /> <!-- Do not mark enums with FlagsAttribute -->
+    <Rule Id="CA2219" Action="Warning" /> <!-- Do not raise exceptions in finally blocks -->
+    <Rule Id="CA2220" Action="Warning" /> <!-- Finalizers should call base class finalizer -->
+  </Rules>
+</RuleSet>
