@@ -1,0 +1,13 @@
+﻿dotnet ef dbcontext scaffold "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=JwtRoleApiDb;Integrated Security=True;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --project CoreAPI.Data --startup-project CoreAPI --output-dir Models --context-dir Context --context Context --force --verbose
+
+
+
+# Option 1 — Single line (recommended, always works)
+dotnet ef migrations add InitialCreate --project CoreAPI.Data --startup-project CoreAPI --output-dir Migrations
+
+# Option 2 — PowerShell multi-line with backtick
+dotnet ef migrations add InitialCreate `
+  --project CoreAPI.Data `
+  --startup-project CoreAPI `
+  --output-dir Migrations
+

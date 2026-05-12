@@ -1,0 +1,41 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# NuGet
+packages/
+*.nupkg
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish folder
+publish/
+
+# Debug & Release
+Debug/
+Release/
+
+# DLL and EXE
+*.dll
+*.exe
+*.pdb
+
+# ASP.NET Core
+appsettings.Development.json

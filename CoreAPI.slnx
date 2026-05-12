@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="CoreAPI.Data/CoreAPI.Data.csproj" />
+  <Project Path="CoreAPI/CoreAPI.csproj" />
+</Solution>
